@@ -1,20 +1,29 @@
 /* Zentrale Farb / Schriftart / Stilvorgaben die von Bootstrap verwendet werden */
-html {
+  :root{
   /* Grundfarben */
-  --bs-body-bg: #ffffff;
-  --bs-body-color: #212529;
-  --text-on-dark:#ffffff;
-
+  --bs-body-bg: #0B132B;
+  --bs-body-color: #133C55;
+  --text-on-dark:#0B132B;
   /* Akzentfarben */
-  --bs-primary: #0055aa;
-  --bs-secondary: #6c757d;
-  --bs-heading-color: #111111;
-
+  --bs-primary: #C9A86A;
+  --bs-secondary: #B08A42;
+  --bs-heading-color: #D6D7D9;
+}
   /* Schriftart */
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-
+  body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+  h1 {
+  color: var(--bs-heading-color);
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+.accent-font {
+  font-family: "Alex Brush", cursive;
+}
   /* Ränder */
   --bs-border-color: #dee2e6;
   --bs-border-width: 0.1em;
@@ -22,11 +31,6 @@ html {
   /* Komponenten */
   --bs-navbar-bg: var(--bs-primary);
   --bs-navbar-color: var(--text-on-dark);
-}
-html, body {
-  margin: 0;
-  padding: 0;
-}
 
 html, body {
   margin: 0;
@@ -38,10 +42,11 @@ html, body {
   padding: 0;
 }
 
-h1 {
-  font-family: "Alex Brush", cursive;
-  font-weight: 600;
+html, body {
+  margin: 0;
+  padding: 0;
 }
+
 
 body {
   overflow-x: hidden; /* verhindert seitliches "Verschieben" */
