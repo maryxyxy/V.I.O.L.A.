@@ -1,29 +1,14 @@
 /* Zentrale Farb / Schriftart / Stilvorgaben die von Bootstrap verwendet werden */
-  :root{
+:root {
   /* Grundfarben */
-  --bs-body-bg: #0B132B;
-  --bs-body-color: #133C55;
-  --text-on-dark:#0B132B;
+  --bs-body-bg: #0b132b;
+  --bs-body-color: #133c55;
+  --text-on-dark: #0b132b;
   /* Akzentfarben */
-  --bs-primary: #C9A86A;
-  --bs-secondary: #B08A42;
-  --bs-heading-color: #D6D7D9;
-}
-  /* Schriftart */
-  body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-  h1 {
-  color: var(--bs-heading-color);
-  font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-text-transform: uppercase;
-}
-.accent-font {
-  font-family: "Alex Brush", cursive;
-}
+  --bs-primary: #c9a86a;
+  --bs-secondary: #b08a42;
+  --bs-heading-color: #d6d7d9;
+
   /* Ränder */
   --bs-border-color: #dee2e6;
   --bs-border-width: 0.1em;
@@ -31,22 +16,42 @@ text-transform: uppercase;
   /* Komponenten */
   --bs-navbar-bg: var(--bs-primary);
   --bs-navbar-color: var(--text-on-dark);
+}
+/* Schriftart */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
 
-html, body {
+h1 {
+  color: var(--bs-heading-color);
+  font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.accent-font {
+  font-family: "Alex Brush", cursive;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
-
 
 body {
   overflow-x: hidden; /* verhindert seitliches "Verschieben" */
@@ -93,13 +98,13 @@ footer {
 }
 
 h1 {
-  text-align:center
+  text-align: center;
 }
 
 /* Bilder im Karussel auf volle Breite */
 .carousel .carousel-item img {
-  width:100%; 
-  display:block;
+  width: 100%;
+  display: block;
 }
 
 /* Navigation bar in definierter Farbe*/
@@ -109,17 +114,18 @@ h1 {
 }
 
 nav a {
-  color:var(--text-on-dark)
+  color: var(--text-on-dark);
 }
 
 /* Button-Links in primärer Akzentfarbe und sekundärer bei Hover*/
 a.btn {
   float: inline-end;
   background-color: var(--bs-primary);
-  color:var(--text-on-dark);
+  color: var(--text-on-dark);
 }
 
-a.btn:hover, a.btn:focus {
+a.btn:hover,
+a.btn:focus {
   background-color: var(--bs-secondary);
-  color:var(--text-on-dark);
+  color: var(--text-on-dark);
 }
