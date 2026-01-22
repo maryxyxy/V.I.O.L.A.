@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,30 +15,30 @@
   <!-- Dein CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <p class="visually-hidden"><a href="#myMain">Zum Hauptinhalt</a></p>
   <!-- Menü über dem Hero -->
-<header id="viola__site-header">
-  <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="/">V.I.O.L.A.</a>
-      <button class="navbar-toggler" type="button"
-        data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+  <header id="viola__site-header">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/">V.I.O.L.A.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
         aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarMenu">
-  <ul class="navbar-nav ms-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="index.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Events</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Radiospots</a>
-    </li>
-  </ul>
-</div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Radiospots</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!-- Hero mit Video -->
@@ -50,141 +51,127 @@
   <main id="myMain">
     <section id="viola__viola" class="viola__viola">
       <h1>V.I.O.L.A.</h1>
-      <p>Das Weltall ist kein Reiseziel. Es ist eine Auswahl. <br> Für Gäste, die im Orbit nicht nach dem Preis fragen, sondern nach dem besten Platz. Unsere VIP-Suiten sind größer als die Träume anderer Anbieter, unsere Lobbys glänzen mit Bühne, Bar und Jacuzzi, weil Stillstand selbst im All peinlich wäre.
-         Und ja, wir haben auch Angebote für jene, die sich den Himmel erst erarbeiten. Weniger Raum, weniger Glanz, derselbe Blick ins Unendliche. Denn nicht jeder fliegt First Class. Aber jeder hebt ab.
-         <br> <br> <strong><em>Willkommen bei V.I.O.L.A. <br>Manche nennen es Raumfahrt. Wir nennen es Niveau.</strong></em>
+      <p>Das Weltall ist kein Reiseziel. Es ist eine Auswahl. <br> Für Gäste, die im Orbit nicht nach dem Preis fragen,
+        sondern nach dem besten Platz. Unsere VIP-Suiten sind größer als die Träume anderer Anbieter, unsere Lobbys
+        glänzen mit Bühne, Bar und Jacuzzi, weil Stillstand selbst im All peinlich wäre.
+        Und ja, wir haben auch Angebote für jene, die sich den Himmel erst erarbeiten. Weniger Raum, weniger Glanz,
+        derselbe Blick ins Unendliche. Denn nicht jeder fliegt First Class. Aber jeder hebt ab.
+        <br> <br> <strong><em>Willkommen bei V.I.O.L.A. <br>Manche nennen es Raumfahrt. Wir nennen es
+            Niveau.</strong></em>
       </p>
     </section>
-<section class="carousel-block">
+    <section class="carousel-block">
 
-  <!-- Bilder Karussell -->
-  <span class="visually-hidden">Fotostrecke von Aktivitäten</span>
+      <!-- Bilder Karussell -->
+      <span class="visually-hidden">Fotostrecke von Aktivitäten</span>
 
-  <div id="myCarousel" class="carousel slide carousel-centered carousel-left" data-bs-ride="carousel">
-    <div class="carousel-inner">
+      <div id="myCarousel" class="carousel slide carousel-centered carousel-left" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-      <div class="carousel-item active">
-        <img src="images/luxusflohmarkt.png" class="d-block w-100" alt="Luxus Flohmarkt">
+          <div class="carousel-item active">
+            <img src="images/luxusflohmarkt.png" class="d-block w-100" alt="Luxus Flohmarkt">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/golf.png" class="d-block w-100" alt="All Golf">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/fallschirm.png" class="d-block w-100" alt="All Sprung">
+          </div>
+
+        </div> <!-- /carousel-inner -->
+
+        <!-- Karussell Steuerung -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">vorheriges</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">nächstes</span>
+        </button>
+      </div> <!-- /#myCarousel -->
+
+      <!-- TEXT: BLEIBT stehen -->
+      <div class="carousel-text">
+        <h3>Text zu Block 1</h3>
+        <p>Dieser Zweizeiler bleibt immer gleich.</p>
+
+        <!-- Passwort-Zugang -->
+        <div class="password-box">
+          <input type="password" id="passwordInput" onkeydown="handleEnter(event)">
+        </div>
       </div>
 
-      <div class="carousel-item">
-        <img src="images/golf.png" class="d-block w-100" alt="All Golf">
+      <script>
+        function handleEnter(event) {
+          if (event.key === "Enter") {
+            const correctPassword = "VIP"; // dein Passwort
+            const input = event.target.value;
+
+            if (input === correctPassword) {
+              window.open("secret.html", "_blank");
+            } else {
+              alert("Falsches Passwort");
+            }
+          }
+        }
+      </script>
+    </section>
+
+    <!-- BLOCK 2: Text links / Karussell rechts -->
+    <section class="carousel-block reverse">
+
+      <!-- Screenreader-Beschreibung -->
+      <span class="visually-hidden">Weitere Fotostrecke</span>
+
+      <!-- Karussell -->
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Karussell-Inhalt -->
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="images/sunburning.png" class="d-block w-100" alt="Sun Burning">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="images/angeln.png" class="d-block w-100" alt="All Angeln">
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="images/looking.png" class="d-block w-100" alt="Watching Golf">
+          </div>
+
+        </div>
+        <!-- /carousel-inner -->
+
+        <!-- Navigation vorher -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Navigation nächstes -->
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+      <!-- /carousel -->
+
+      <!-- Statischer Text links -->
+      <div class="carousel-text">
+        <h3>Text zu Block 2</h3>
+        <p>Hier steht der Text links, das Karussell rechts.</p>
       </div>
 
-      <div class="carousel-item">
-        <img src="images/fallschirm.png" class="d-block w-100" alt="All Sprung">
-      </div>
-
-    </div> <!-- /carousel-inner -->
-
-    <!-- Karussell Steuerung -->
-    <button class="carousel-control-prev" type="button"
-            data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">vorheriges</span>
-    </button>
-
-    <button class="carousel-control-next" type="button"
-            data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">nächstes</span>
-    </button>
-  </div> <!-- /#myCarousel -->
-
-  <!-- TEXT: BLEIBT stehen -->
-  <div class="carousel-text">
-    <h3>Text zu Block 1</h3>
-    <p>Dieser Zweizeiler bleibt immer gleich.</p>
-
-  <!-- Passwort-Zugang -->
-    <div class="password-box">
-    <input
-      type="password"
-      id="passwordInput"
-    onkeydown="handleEnter(event)"
-    >
-    </div>
-  </div>
-
-<script>
-  function handleEnter(event) {
-    if (event.key === "Enter") {
-      const correctPassword = "VIP"; // dein Passwort
-      const input = event.target.value;
-
-    if (input === correctPassword) {
-      window.open("secret.html", "_blank");
-    } else {
-      alert("Falsches Passwort");
-    }
-  }
-}
-</script>
-</section>
-
-<!-- BLOCK 2: Text links / Karussell rechts -->
-<section class="carousel-block reverse">
-
-  <!-- Screenreader-Beschreibung -->
-  <span class="visually-hidden">Weitere Fotostrecke</span>
-
-  <!-- Karussell -->
-  <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-
-    <!-- Karussell-Inhalt -->
-    <div class="carousel-inner">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <img src="images/sunburning.png"
-             class="d-block w-100"
-             alt="Sun Burning">
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <img src="images/angeln.png"
-             class="d-block w-100"
-             alt="All Angeln">
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <img src="images/looking.png"
-             class="d-block w-100"
-             alt="Watching Golf">
-      </div>
-
-    </div>
-    <!-- /carousel-inner -->
-
-    <!-- Navigation vorher -->
-    <button class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carousel2"
-            data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-
-    <!-- Navigation nächstes -->
-    <button class="carousel-control-next"
-            type="button"
-            data-bs-target="#carousel2"
-            data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-
-  </div>
-  <!-- /carousel -->
-
-  <!-- Statischer Text links -->
-  <div class="carousel-text">
-    <h3>Text zu Block 2</h3>
-    <p>Hier steht der Text links, das Karussell rechts.</p>
-  </div>
-
-</section>
-<!-- 
+    </section>
+    <!-- 
   Inhalt 
             <h1> Überschrift Inhalt </h1>
             <div class="container">
@@ -202,96 +189,115 @@
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
                     </div>
                 </div>
---> 
-<!-- Raketenangebote --> 
-<section id="viola__website" class="viola__website"></section>
-      <div class="viola__Überuns__content">
-          <h3>V.I.O.L.A.</h3>
-          <h4> Voyager Institute for Orbital Luxury Adventures</h4>
-          <p> Text zu Über uns</p>
-      </div>
-        <section id="viola__offers" class="viola__offers">
- <div class="viola__offers__slider">
+-->
+    <!-- Raketenangebote -->
+    <section id="viola__website" class="viola__website"></section>
+    <div class="viola__Überuns__content">
+      <h3>V.I.O.L.A.</h3>
+      <h4> Voyager Institute for Orbital Luxury Adventures</h4>
+      <p> Text zu Über uns</p>
+    </div>
+    <section id="viola__offers" class="viola__offers">
+      <div class="viola__offers__slider">
         <div class="viola__offers__slider__item">
-            <img src="images/vip.jpg" alt="VIP">
-            <div class="viola__offers__slider__item__info">        
-                    <h2>VIP</h2>
-                    <span> Bei Anfragen eine Mail senden </span>
-                    <p> Was darüber?</p>
-                    <a class="viola__content__slider__item__info__btn" href="#">Kontakt</a> </div>
-              </div>
-         </div>
-  <div class="viola__offers__slider">
-         <div class="viola__offers__slider__item">
-              <img src="images/business.jpg" alt="Business">
-              <div class="viola__offers__slider__item__info">        
-                    <h2>Business</h2>
-                    <span> Bei Anfragen eine Mail senden </span>
-                    <p> Text darüber </p>
-                    <a class="viola__content__slider__item__info__btn" href="mailto:marie.streb.1@gmx.de">Kontakt</a> </div>
-                </div>
-             </div>
-         </div> 
-     <div class="viola__offers__slider">
-         <div class="viola__offers__slider__item">
-            <img src="images/trash.jpg" alt="Trash">
-            <div class="viola__offers__slider__item__info">
-                </div>          
-                    <h2>Trash</h2>
-                    <span> Bei Anfragen eine Mail senden </span>
-                    <div><a class="viola__content__slider__item__info__btn" href="#">Kontakt</a> </div>
-                </div>
-             </div>
-         </div>
-    </div>
-    <div class="viola__offers__slider__btn-next">  
-            →
-    </div>
-    <div class="viola__offers__slider__btn-prev"> 
-            ← 
-    </div>      
-</section>
-<section id="viola__slogen" class="viola__slogan">
-    <div class="viola_slogan__conten">
+          <img src="images/vip.jpg" alt="VIP">
+          <div class="viola__offers__slider__item__info">
+            <h2>VIP</h2>
+            <span> Bei Anfragen eine Mail senden </span>
+            <p> Was darüber?</p>
+            <a class="viola__content__slider__item__info__btn" href="#">Kontakt</a>
+          </div>
+        </div>
+      </div>
+      <div class="viola__offers__slider">
+        <div class="viola__offers__slider__item">
+          <img src="images/business.jpg" alt="Business">
+          <div class="viola__offers__slider__item__info">
+            <h2>Business</h2>
+            <span> Bei Anfragen eine Mail senden </span>
+            <p> Text darüber </p>
+            <a class="viola__content__slider__item__info__btn" href="mailto:marie.streb.1@gmx.de">Kontakt</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="viola__offers__slider">
+        <div class="viola__offers__slider__item">
+          <img src="images/trash.jpg" alt="Trash">
+          <div class="viola__offers__slider__item__info">
+          </div>
+          <h2>Trash</h2>
+          <span> Bei Anfragen eine Mail senden </span>
+          <div><a class="viola__content__slider__item__info__btn" href="#">Kontakt</a> </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="viola__offers__slider__btn-next">
+        →
+      </div>
+      <div class="viola__offers__slider__btn-prev">
+        ←
+      </div>
+    </section>
+    <section id="viola__slogen" class="viola__slogan">
+      <div class="viola_slogan__conten">
         <p> Slogan </p>
-    </div>
-</section>
+      </div>
+    </section>
+    <h1> Popstar Kati Birnenwein</h1>
+    <font style="font-style:italic">
+      <p><img src="/images/kprofil.png" alt="Berühmte Persönlichkeit
+
+
+           Kati Birnenwein" width="250"> </p>
+      <p> ,,Flying with V.I.O.L.A hat mein ganzes Life gechanged.
+        Im just super grateful and I Feel so much Love.”
+
+
+      <p> Wenn sie mehr über das exklusive Interview von Kati hören, worin sie ihre neue Tour ,,Flying in Space”
+        (sponsored by V.I.O.L.A) angekündigt, klicken Sie einmal hier: <a href="video/Radiospot MI.mp3"">Radiospot</a></p>
 
   <!-- Newsletter 
-            <div class="card">
-               <div class="card-body">
-                      <h2 class="card-title">Newsletter</h2>
-                      <h3 class="card-subtitle text-muted">Bleiben Sie immer auf dem neuesten Stand!</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                      <a href="https://www.uni-bremen.de" target="_blank" class="btn">Anmelden</a>
-               </div>
-            </div>
-        </main>
-        -->
+            <div class=" card">
+          <div class="card-body">
+            <h2 class="card-title">Newsletter</h2>
+            <h3 class="card-subtitle text-muted">Bleiben Sie immer auf dem neuesten Stand!</h3>
+            <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+              invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+              et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+              Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <a href="https://www.uni-bremen.de" target="_blank" class="btn">Anmelden</a>
+          </div>
+          </div>
+  </main>
+  -->
   <!-- Footer Abschnitt -->
 
-<footer class="container">
-  <p class="float-end"><a href="#">Nach oben</a></p>
-  <p><a href="impressum.html">Impressum</a></p>
-  <h2>Autoren/-innen</h2>
-  <p>
-    Marie Streb, Mathilda Wirth, Arne Osterhaus<br>
-    Übungsaufgabe im Kurs Grundlagen der Medieninformatik 1
-  </p>
-  <h2>Veranstalter</h2>
-  <p>
-    Prof. Dr.-Ing. Udo Frese<br>
-    Universität Bremen<br>
-    Enrique-Schmidt-Str. 5<br>
-    28359 Bremen<br>
-    <a href="mailto:ufrese@uni-bremen.de">ufrese@uni-bremen.de</a>
-  </p>
-  <h2>Übergeordnete Website</h2>
-  <p>
-    <a href="https://www.uni-bremen.de/impressum.html">Impressum der Universität Bremen</a>
-  </p>
-</footer>
+  <footer class="container">
+    <p class="float-end"><a href="#">Nach oben</a></p>
+    <p><a href="impressum.html">Impressum</a></p>
+    <h2>Autoren/-innen</h2>
+    <p>
+      Marie Streb, Mathilda Wirth, Arne Osterhaus<br>
+      Übungsaufgabe im Kurs Grundlagen der Medieninformatik 1
+    </p>
+    <h2>Veranstalter</h2>
+    <p>
+      Prof. Dr.-Ing. Udo Frese<br>
+      Universität Bremen<br>
+      Enrique-Schmidt-Str. 5<br>
+      28359 Bremen<br>
+      <a href="mailto:ufrese@uni-bremen.de">ufrese@uni-bremen.de</a>
+    </p>
+    <h2>Übergeordnete Website</h2>
+    <p>
+      <a href="https://www.uni-bremen.de/impressum.html">Impressum der Universität Bremen</a>
+    </p>
+  </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </html>
-
