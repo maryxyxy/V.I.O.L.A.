@@ -28,7 +28,7 @@ body {
   top: 15;
   left: 10;
   width: 100%;
-  z-index: 120;
+  z-index: 150;
   font-size: 1.2rem; /* größer / kleiner nach Geschmack */
   letter-spacing: 0.15em;
 }
@@ -177,17 +177,15 @@ body {
 }
 .viola__offers__slider {
   padding: 10px 50px 10px 50px;
+  width: 600px; /* ← Größe des Quadrats */
+  aspect-ratio: 2 / 2; /* ← Quadrat */
+  object-fit: cover; /* ← sauber zuschneiden */
+  display: block;
 }
 
 .viola__offers h2 {
   color: #0b132b;
   padding: 10px 50px 10px 50px;
-}
-.viola__offers__slider__item img {
-  width: 350px; /* ← Größe des Quadrats */
-  aspect-ratio: 1 / 1; /* ← Quadrat */
-  object-fit: cover; /* ← sauber zuschneiden */
-  display: block;
 }
 
 /* Normaler Content-Container darunter */
