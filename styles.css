@@ -169,6 +169,27 @@ body {
   overflow: hidden;
 }
 
+.viola__offers {
+  background-color: #d6d7d9;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px 0 50px;
+}
+.viola__offers__slider {
+  padding: 10px 50px 10px 50px;
+}
+
+.viola__offers h2 {
+  color: #0b132b;
+  padding: 10px 50px 10px 50px;
+}
+.viola__offers__slider__item img {
+  width: 350px; /* ← Größe des Quadrats */
+  aspect-ratio: 1 / 1; /* ← Quadrat */
+  object-fit: cover; /* ← sauber zuschneiden */
+  display: block;
+}
+
 /* Normaler Content-Container darunter */
 .container {
   max-width: 1100px;
