@@ -5,7 +5,7 @@
   --bs-body-color: #133c55;
   --text-on-dark: #0b132b;
   /* Akzentfarben */
-  --bs-primary: #c9a86a;
+  --bs-primary: #d6d7d9;
   --bs-secondary: #b08a42;
   --bs-heading-color: #d6d7d9;
 
@@ -50,12 +50,12 @@ body {
 .hero__banner {
   height: 100vh; /* volle Bildschirmhöhe */
   overflow: hidden;
+  margin: 0;
 }
 
 .hero__banner video {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* wichtig für "Background-Video" Look */
+  height: auto;
   display: block;
 }
 
@@ -72,6 +72,10 @@ h1 {
   font-family: "Alex Brush", cursive;
 }
 
+.viola__viola {
+  background-color: #0b132b;
+  padding-top: 0px;
+}
 .viola__viola h1 {
   font-size: 50px;
   margin-top: 60px;
@@ -92,17 +96,25 @@ h1 {
 .carousel-block {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 0rem;
 
-  margin: 6rem auto;
-  padding: 0 40px; /* ✅ Abstand links/rechts */
-  max-width: 1700px; /* optional */
+  margin: 0;
+  padding: 1.5rem 40px; /* ✅ Abstand links/rechts */
+  width: 100%;
 }
 
 /* Größe des Karussells */
 .carousel-block .carousel {
   flex: 0 0 50%;
   max-width: 50%;
+}
+
+.carousel-block .carousel-item img {
+  width: 80% !important;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Text daneben */
@@ -138,6 +150,100 @@ h1 {
 
   outline: none;
 }
+.viola__ticket {
+  background-color: #d6d7d9; /* hell/silber */
+  padding: 5rem 0;
+}
+
+.viola__ticket__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.viola__ticket__visual {
+  flex: 0 0 45%;
+  text-align: center;
+}
+
+.viola__ticket__visual h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0b132b;
+  margin: 0 0 1.5rem 0;
+}
+
+.viola__ticket__visual img {
+  width: 100%;
+  max-width: 2000px;
+  display: block;
+  margin: 0 auto auto auto;
+}
+
+.viola__ticket__hint {
+  font-family: "Poppins", sans-serif;
+  color: #0b132b;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.viola__ticket__card {
+  flex: 1;
+  background: rgba(11, 19, 43, 0.08); /* leichter dunkler Kasten */
+  border-radius: 14px;
+  padding: 2.5rem 2.5rem;
+}
+
+.viola__ticket__card .card-title {
+  font-family: "Poppins", sans-serif;
+  color: #0b132b;
+  margin: 0 0 0.5rem 0;
+}
+
+.viola__ticket__card .card-subtitle {
+  font-family: "Poppins", sans-serif;
+  color: #133c55;
+  margin: 0 0 1.5rem 0;
+  font-size: 1.05rem;
+}
+
+.viola__ticket__card .card-text {
+  font-family: "Poppins", sans-serif;
+  color: #0b132b;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.viola__ticket__card .btn {
+  background-color: #b08a42;
+  color: #0b132b;
+  border: none;
+  padding: 0.75rem 1.1rem;
+  border-radius: 10px;
+}
+
+.viola__ticket__card .btn:hover {
+  background-color: #c9a86a;
+}
+
+/* Mobile: untereinander */
+@media (max-width: 900px) {
+  .viola__ticket__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .viola__ticket__visual {
+    flex: 0 0 auto;
+  }
+
+  .viola__ticket__visual img {
+    width: 65%;
+  }
+}
 
 html,
 body {
@@ -171,21 +277,156 @@ body {
 
 .viola__offers {
   background-color: #d6d7d9;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 50px 0 50px;
+  margin-top: 10px;
+  padding: 20px 0 0px;
+  display: flex;
+  flex-direction: column; /* alles untereinander */
+  gap: 2rem; /* Abstand zwischen VIP/Business/Trash */
 }
+
+.viola__offers__inner {
+  padding: 3rem 5.5rem; /* oben/unten | links/rechts */
+}
+
 .viola__offers__slider {
-  padding: 10px 50px 10px 50px;
-  width: 600px; /* ← Größe des Quadrats */
-  aspect-ratio: 2 / 2; /* ← Quadrat */
-  object-fit: cover; /* ← sauber zuschneiden */
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.viola__offers__slider .carousel {
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
+/* Bilder im Karussell */
+.viola__offers__slider .carousel img {
+  width: 100%;
+  height: auto;
   display: block;
+}
+
+/* Textbereich rechts */
+.viola__offers__slider__item__info {
+  margin-top: 10px;
+  flex: 1;
+  max-width: 1050px;
+  padding: 0 2rem;
+}
+
+/* Absatz: Blocksatz */
+.viola__offers__slider__item__info p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Mail-Icon klein */
+.viola__content__slider__item__info__btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+@media (max-width: 900px) {
+  .viola__offers__slider {
+    flex-direction: column;
+  }
+
+  .viola__offers__slider .carousel {
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+}
+
+.viola__offers h1 {
+  font-family: poppins;
+  color: #0b132b;
+  margin: 0 0 3rem 0; /* Abstand nach unten */
+  padding: 0;
+  text-align: left;
 }
 
 .viola__offers h2 {
   color: #0b132b;
-  padding: 10px 50px 10px 50px;
+  margin-top: 15px;
+  padding-left: 0px;
+  margin-bottom: 25px;
+}
+.viola__interview {
+  position: relative;
+  background-image: url("images/stock.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 100px;
+}
+
+/* Hintergrund abdunkeln */
+.viola__interview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Inhalt nach vorne holen */
+.viola__interview__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 3.8rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.viola__interview__headline {
+  font-family: "Poppins", sans-serif;
+  color: #d6d7d9;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.viola__interview__headline .underline {
+  text-decoration: underline;
+}
+.viola__interview__quote {
+  font-family: "Poppins", sans-serif;
+  color: #c9a86a;
+  font-size: 2.9rem;
+  margin-top: 50px;
+  text-align: center;
+}
+.viola__interview__info {
+  font-family: "Poppins", sans-serif;
+  color: #d6d7d9;
+  font-size: 1.1rem;
+  margin-top: 110px;
+  text-align: center;
+}
+
+/* BILD RECHTS */
+.viola__interview__image {
+  flex: 0 0 380px;
+}
+
+.viola__interview__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.radio-btn {
+  margin-top: 15px;
+  background-color: #b08a42;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 /* Normaler Content-Container darunter */
@@ -227,6 +468,85 @@ h1 {
 
 nav a {
   color: var(--text-on-dark);
+}
+.viola__impressum {
+  background-color: #0b132b; /* dunkler Hintergrund */
+  padding: 4rem 0;
+}
+
+.viola__impressum .container {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-left: 220px;
+  color: #d6d7d9;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Überschriften */
+.viola__impressum h2 {
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.6rem;
+  color: #c9a86a;
+  letter-spacing: 0.05em;
+}
+
+/* Text */
+.viola__impressum p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Links */
+.viola__impressum a {
+  color: #d6d7d9;
+  text-decoration: underline;
+}
+
+.viola__impressum a:hover {
+  color: #c9a86a;
+}
+
+/* Der „Impressum“-Link oben */
+.viola__impressum > .container > p:first-child {
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+/* ===============================
+   SECRET PAGE (nur secret.html)
+   =============================== */
+
+.page-secret {
+  background-color: #0b132b; /* dunkelblau */
+  color: #cfd2d6; /* silber */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-secret .secret {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.page-secret .secret__text {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+  font-size: 1.2rem; /* ← Textgröße hier ändern */
+}
+
+.page-secret .secret__signature {
+  font-family: "Alex Brush", cursive;
+  color: #c9a86a; /* gold */
+  font-size: 3.2rem;
+  margin: 2rem 0 0;
+  letter-spacing: 0.12em;
 }
 
 /* Button-Links in primärer Akzentfarbe und sekundärer bei Hover*/
