@@ -17,16 +17,51 @@
   --bs-navbar-bg: var(--bs-primary);
   --bs-navbar-color: var(--text-on-dark);
 }
-/* Schriftart */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
 body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  background: var(--bs-body-bg);
 }
+
+h1 {
+  color: var(--bs-heading-color);
+  font-family: "Alex Brush", cursive;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 200px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.accent-font {
+  font-family: "Alex Brush", cursive;
+}
+/* Spezifische Vorgaben für bestimmte Elemente. */
+
+.col {
+  text-align: center;
+}
+
+.card {
+  margin: 4rem 0 4rem 0;
+}
+
 /* 1) Navbar über dem Hero */
 #viola__site-header {
   position: absolute; /* liegt über dem Video */
-  top: 15;
-  left: 10;
+  top: 15px;
+  left: 10px;
   width: 100%;
   z-index: 150;
   font-size: 1.2rem; /* größer / kleiner nach Geschmack */
@@ -35,15 +70,16 @@ body {
 
 #viola__site-header .navbar {
   background-color: transparent;
-  --bs-navbar-bg: transparent; /* dunkelblau */
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   --bs-navbar-color: #cfd2d6; /* silber */
   --bs-navbar-brand-color: #cfd2d6;
   --bs-navbar-brand-hover-color: #e6e6e6;
   --bs-navbar-hover-color: #e6e6e6;
-
-  padding-left: 3rem;
-  padding-right: 3rem;
+}
+#viola__site-header nav a {
+  color: #cfd2d6;
 }
 
 /* 2) Hero Fullscreen */
@@ -57,19 +93,6 @@ body {
   width: 100%;
   height: auto;
   display: block;
-}
-
-h1 {
-  color: var(--bs-heading-color);
-  font-family: "Alex Brush", cursive;
-  font-size: 10;
-  font-weight: 200;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.accent-font {
-  font-family: "Alex Brush", cursive;
 }
 
 .viola__viola {
@@ -119,6 +142,8 @@ h1 {
 
 /* Text daneben */
 .carousel-text {
+  color: #b08a42;
+  font-size: 1.3rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -136,17 +161,18 @@ h1 {
   padding: 0 24px;
 }
 
-.passwort-box {
-  margin-top: 20px;
+.password-box {
+  margin-top: 15px;
   align-items: center;
 }
 .password-box input {
   background: transparent;
-  border: 1px solid #133c55;
+  border: 1.2px solid #133c55;
   color: #c9a86a;
+  text-align: center;
 
   padding: 0.2rem 0.4rem;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 
   outline: none;
 }
@@ -170,17 +196,17 @@ h1 {
   text-align: center;
 }
 
-.viola__ticket__visual h2 {
-  font-family: "Poppins", sans-serif;
-  color: #0b132b;
-  margin: 0 0 1.5rem 0;
-}
-
 .viola__ticket__visual img {
   width: 100%;
   max-width: 2000px;
   display: block;
   margin: 0 auto auto auto;
+}
+
+.viola__ticket__visual h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0b132b;
+  margin: 0 0 1.5rem 0;
 }
 
 .viola__ticket__hint {
@@ -245,36 +271,6 @@ h1 {
   }
 }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden; /* verhindert seitliches "Verschieben" */
-}
-
-/* Full width Hero */
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
 .viola__offers {
   background-color: #d6d7d9;
   margin-top: 10px;
@@ -306,6 +302,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 /* Textbereich rechts */
@@ -324,30 +321,11 @@ body {
   hyphens: auto;
 }
 
-/* Mail-Icon klein */
-.viola__content__slider__item__info__btn img {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-  display: inline-block;
-}
-
-@media (max-width: 900px) {
-  .viola__offers__slider {
-    flex-direction: column;
-  }
-
-  .viola__offers__slider .carousel {
-    max-width: 100%;
-    flex: 0 0 auto;
-  }
-}
-
 .viola__offers h1 {
   font-family: poppins;
   color: #0b132b;
   margin: 0 0 3rem 0; /* Abstand nach unten */
-  padding: 0;
+
   text-align: left;
 }
 
@@ -357,12 +335,20 @@ body {
   padding-left: 0px;
   margin-bottom: 25px;
 }
+
+/* Mail-Icon klein */
+.viola__content__slider__item__info__btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
 .viola__interview {
   position: relative;
   background-image: url("images/stock.jpg");
   background-size: cover;
   background-position: center;
-  padding: 80px 100px;
+  padding: clamp(2rem, 6vw, 80px) clamp(1rem, 6vw, 100px);
 }
 
 /* Hintergrund abdunkeln */
@@ -435,40 +421,10 @@ body {
   margin: 0 auto;
   padding: 24px 16px;
 }
-
-/* Spezifische Vorgaben für bestimmte Elemente. */
-
-.col {
-  text-align: center;
-}
-
-.card {
-  margin: 4rem 0 4rem 0;
-}
-
 footer {
   margin-top: 4rem;
 }
 
-h1 {
-  text-align: center;
-}
-
-/* Bilder im Karussel auf volle Breite */
-.carousel .carousel-item img {
-  width: 100%;
-  display: block;
-}
-
-/* Navigation bar in definierter Farbe*/
-.navbar {
-  background-color: var(--bs-navbar-bg);
-  /*color:var(--text-on-dark)*/
-}
-
-nav a {
-  color: var(--text-on-dark);
-}
 .viola__impressum {
   background-color: #0b132b; /* dunkler Hintergrund */
   padding: 4rem 0;
@@ -514,9 +470,53 @@ nav a {
   margin-bottom: 2rem;
   font-size: 1rem;
 }
-/* ===============================
-   SECRET PAGE (nur secret.html)
-   =============================== */
+
+/* Button-Links in primärer Akzentfarbe und sekundärer bei Hover*/
+a.btn {
+  float: inline-end;
+  background-color: var(--bs-primary);
+  color: var(--text-on-dark);
+}
+
+a.btn:hover,
+a.btn:focus {
+  background-color: var(--bs-secondary);
+  color: var(--text-on-dark);
+}
+
+@media (max-width: 900px) {
+  .viola__viola p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .carousel-block {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .carousel-block .carousel {
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .carousel-block .carousel-item img {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .viola__interview__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .viola__interview__image {
+    flex: 0 0 auto;
+    max-width: 320px;
+    width: 70%;
+  }
+}
+/*  SECRET PAGE (nur secret.html) */
 
 .page-secret {
   background-color: #0b132b; /* dunkelblau */
@@ -547,17 +547,4 @@ nav a {
   font-size: 3.2rem;
   margin: 2rem 0 0;
   letter-spacing: 0.12em;
-}
-
-/* Button-Links in primärer Akzentfarbe und sekundärer bei Hover*/
-a.btn {
-  float: inline-end;
-  background-color: var(--bs-primary);
-  color: var(--text-on-dark);
-}
-
-a.btn:hover,
-a.btn:focus {
-  background-color: var(--bs-secondary);
-  color: var(--text-on-dark);
 }
