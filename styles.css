@@ -50,7 +50,7 @@ h1 {
   font-family: "Alex Brush", cursive;
   font-size: clamp(2rem, 8vw, 50px);
   text-align: center;
-  font-weight: 200px;
+  font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -98,7 +98,7 @@ h1 {
 .hero__banner {
   height: 100vh; /* volle Bildschirmhöhe */
   overflow: hidden;
-  margin: 100;
+  margin: 0;
 }
 
 .hero__banner video {

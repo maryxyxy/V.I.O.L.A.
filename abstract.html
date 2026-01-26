@@ -1,38 +1,75 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Anmerkung: Auf Header-Elemente wurde verzichtet, da die Dateien aller Gruppen später automatisiert zusammengefasst werden. -->
-  </head>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abstract – V.I.O.L.A.</title>
 
-  <body>
-    <!-- 1. Hier den Link gegen einen relativen Link zur Einstiegsseite der abgegebenen Web-Site austauschen -->
-    <a href="index.html">
-      <!-- 2. Hier den Namen des Vorschaubilds eintragen sowie den "alt"-Text anpassen -->
-      <img src="title.png" alt="Titel" />
-    </a>
+  <!-- Optional: gleiche Fonts wie auf index.html -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
 
-    <!-- 3. Hier den Titel der eigenen Kampagne eintragen 
-             SOLL DIE KAMPAGNE VERÖFFENTLICHT WERDEN, 
-             "(NICHT VERÖFFENTLICHEN)" 
-             HINTER DEN TITEL ENTFERNEN
-           -->
-    <h2>Titel - Untertitel (NICHT VERÖFFENTLICHEN)</h2>
-    <!-- 4. Hier die Namen der Gruppenmitglieder eintragen -->
-    <h3>Hans Müller, Petra Meyer, Karl Schmidt und Franka Lehmann</h3>
+  <!-- Dein CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <!-- 5. Was der Text sagt ... -->
-    <p>
-      Hier kommt ein kurzer Absatz hin, der die Kampagne in 3-4 Sätzen prägnant
-      beschreibt. Hier kommt ein kurzer Absatz hin, der die Kampagne in 3-4
-      Sätzen prägnant beschreibt. Hier kommt ein kurzer Absatz hin, der die
-      Kampagne in 3-4 Sätzen prägnant beschreibt. Hier kommt ein kurzer Absatz
-      hin, der die Kampagne in 3-4 Sätzen prägnant beschreibt.
-    </p>
+<body>
+  <!-- Skip-Link -->
+  <p class="visually-hidden"><a href="#main">Zum Hauptinhalt springen</a></p>
 
-    <p>
-      <!-- 6. Hier noch einmal den Link gegen einen Link zur abgegebenen Web-Seite austauschen -->
-      <a href="index.html">Link zur Web-Seite der Kampagne</a>
-    </p>
-  </body>
+  <header class="container" style="padding-top: 1.5rem;">
+    <h1 style="margin: 0;">V.I.O.L.A. – Luxus-Raumfahrt</h1>
+
+  </header>
+
+  <main id="main" class="container" style="color:#d6d7d9; max-width: 900px;">
+    <section aria-labelledby="abstract-heading" style="margin-top: 2rem;">
+      <h2 id="abstract-heading" style="color:#c9a86a; font-family: 'Poppins', sans-serif; text-align:center;">
+        Kurzbeschreibung
+      </h2>
+
+      <p style="line-height: 1.8;">
+        Die Website „V.I.O.L.A.“ inszeniert ein fiktives Raumfahrtunternehmen, das Weltraumreisen als luxuriöses
+        Lifestyle-Produkt vermarktet. Im Mittelpunkt steht ein stark visuell geprägter Einstieg über ein Hero-Video,
+        der die Atmosphäre und Markenwirkung sofort etabliert.
+      </p>
+
+      <p style="line-height: 1.8;">
+        Inhaltlich führt die Seite durch Attraktionen (in Form von Karussells), ein Angebotssegment mit drei Klassen
+        (VIP, Business, Economy/Trash) sowie ein „Interview“-Bereich mit Radiospot und Transkript-Option.
+        Ein Newsletter-Call-to-Action rundet das Erlebnis ab und führt Nutzer*innen zu einer direkten Kontaktaufnahme.
+      </p>
+
+      <p style="line-height: 1.8;">
+        Technisch setzt das Projekt auf HTML5, CSS und Bootstrap-Komponenten (u. a. Navbar und Carousel).
+        Ein Fokus liegt auf responsivem Layout, klaren Überschriftenstrukturen, sinnvollen Alt-Texten und
+        grundlegenden Barrierefreiheits-Features wie Skip-Link und sichtbaren Fokus-Stilen.
+      </p>
+    </section>
+
+    <section aria-labelledby="goals-heading" style="margin-top: 2.5rem;">
+      <h2 id="goals-heading" style="color:#c9a86a; font-family: 'Poppins', sans-serif; text-align:center;">
+        Ziele
+      </h2>
+
+      <ul style="line-height: 1.8;">
+        <li>Atmosphärische Markeninszenierung durch Video, Typografie und Farbschema.</li>
+        <li>Strukturierte Präsentation der Inhalte mit wiederkehrenden Komponenten (Karussells, Angebotsblöcke).</li>
+        <li>Mobile Nutzbarkeit durch Media Queries und flexible Layouts.</li>
+        <li>Verbesserte Zugänglichkeit durch semantische Struktur, Labels, Alt-Texte und Fokusführung.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="back-heading" style="margin-top: 2.5rem; text-align:center;">
+      <h2 id="back-heading" class="visually-hidden">Zurück</h2>
+      <a class="option-link" href="index.html">Zurück zur Startseite</a>
+    </section>
+  </main>
+
+  <footer class="container" style="padding: 2.5rem 1rem; text-align:center; color:#d6d7d9;">
+    <small>V.I.O.L.A. – Projektseite</small>
+  </footer>
+</body>
 </html>

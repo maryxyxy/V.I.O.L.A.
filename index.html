@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.I.O.L.A.</title>
+  <title>V.I.O.L.A. - Luxus-Raumfahrt</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
@@ -17,392 +17,399 @@
 </head>
 
 <body>
-  <p class="visually-hidden"><a href="#myMain">Zum Hauptinhalt</a></p>
-  <!-- Menü über dem Hero -->
+  <!-- Skip-Link zum Hauptinhalt -->
+  <p class="visually-hidden"><a href="#myMain">Zum Hauptinhalt springen</a></p>
+
+  <!-- Header / Navigation -->
   <header id="viola__site-header">
-    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="/">V.I.O.L.A.</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#myCarousel">Attraktionen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#viola__offers">Angebote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#viola__interview">Interview</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#viola__impressum">Impressum</a>
-          </li>
-        </ul>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark" aria-label="Hauptnavigation">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">V.I.O.L.A.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu" aria-expanded="false" aria-label="Menü öffnen/schließen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#myCarousel">Attraktionen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#viola__offers">Angebote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#viola__interview">Interview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#viola__impressum">Impressum</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
+
   <!-- Hero mit Video -->
-  <section id="viola__herobanner" class="hero__banner">
-    <video autoplay muted playsinline>
+  <section id="viola__herobanner" class="hero__banner" aria-label="Hero-Banner mit Weltraum-Video">
+    <video autoplay muted playsinline aria-hidden="true">
       <source src="video/herobanner.mp4" type="video/mp4">
     </video>
   </section>
-  <!-- Content -->
+
+  <!-- Hauptinhalt -->
   <main id="myMain">
+    <!-- V.I.O.L.A. Einführung -->
     <section id="viola__viola" class="viola__viola">
-      <h1>V.I.O.L.A.</h1>
+      <h1>V.I.O.L.A. – Luxus-Raumfahrt</h1>
       <p>Das Weltall ist kein Reiseziel. Es ist eine Auswahl. <br> Für Gäste, die im Orbit nicht nach dem Preis fragen,
         sondern nach dem besten Platz. Unsere VIP-Suiten sind größer als die Träume anderer Anbieter, unsere Lobbys
         glänzen mit Bühne, Bar und Jacuzzi, weil Stillstand selbst im All peinlich wäre.
         Und ja, wir haben auch Angebote für jene, die sich den Himmel erst erarbeiten. Weniger Raum, weniger Glanz,
         derselbe Blick ins Unendliche. Denn nicht jeder fliegt First Class. Aber jeder hebt ab.
         <br> <br> <strong><em>Willkommen bei V.I.O.L.A. <br>Manche nennen es Raumfahrt. Wir nennen es
-            Niveau.</strong></em>
+            Niveau.</em></strong>
       </p>
     </section>
+
+    <!-- Karussell 1: VIP & Business Attraktionen -->
     <section class="carousel-block">
+      <h2 class="visually-hidden">VIP und Business Attraktionen</h2>
 
-      <!-- Bilder Karussell -->
-      <span class="visually-hidden">Fotostrecke von Aktivitäten</span>
-
-      <div id="myCarousel" class="carousel slide carousel-centered carousel-left" data-bs-ride="carousel">
+      <div id="myCarousel" class="carousel slide carousel-centered carousel-left" data-bs-ride="carousel" 
+        aria-label="Karussell: VIP und Business Attraktionen">
         <div class="carousel-inner">
 
           <div class="carousel-item active">
-            <img src="images/luxusflohmarkt.png" class="d-block carousel-img" alt="Luxus Flohmarkt">
+            <img src="images/luxusflohmarkt.png" class="d-block carousel-img"
+              alt="Mit Edelsteinen besetzte Rakete fliegt über der Erde; Sonne geht am Horizont auf.">
           </div>
 
           <div class="carousel-item">
-            <img src="images/golf.png" class="d-block carousel-img" alt="All Golf">
+            <img src="images/golf.png" class="d-block carousel-img"
+              alt="Astronaut schlägt einen Golfball auf dem Mond; mehrere Astronauten stehen daneben.">
           </div>
 
           <div class="carousel-item">
-            <img src="images/fallschirm.png" class="d-block carousel-img" alt="All Sprung">
+            <img src="images/fallschirm.png" class="d-block carousel-img"
+              alt="Person gleitet mit leuchtendem Gleitschirm über einem Planeten; darunter wirbelnde Wolkenformation.">
           </div>
 
-        </div> <!-- /carousel-inner -->
+        </div>
 
-        <!-- Karussell Steuerung -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <!-- Karussell-Navigation -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+          aria-label="Vorheriges Bild anzeigen">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">vorheriges</span>
         </button>
 
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next"
+          aria-label="Nächstes Bild anzeigen">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">nächstes</span>
         </button>
-      </div> <!-- /#myCarousel -->
+      </div>
 
-      <!-- TEXT: BLEIBT stehen -->
+      <!-- Statischer Text -->
       <div class="carousel-text">
-        <h3>VIP & Buisness</h3>
-        <p>Die Luxeriösten Attraktionen für unsere Upper-Class.</p>
-        <li>Cosmic Hole-in-One</li>
-        <li> Nebula Glide</li>
-        <li> Galactic Treasure Flea</li>
+        <h3>VIP & Business</h3>
+        <p>Die luxuriösesten Attraktionen für unsere Upper-Class.</p>
+        <ul>
+          <li>Cosmic Hole-in-One</li>
+          <li>Nebula Glide</li>
+          <li>Galactic Treasure Flea</li>
+        </ul>
 
         <!-- Passwort-Zugang -->
         <div class="password-box">
-          <input type="password" id="passwordInput" onkeydown="handleEnter(event)">
+          <label for="passwordInput">VIP-Passwort eingeben:</label>
+          <input type="password" id="passwordInput" aria-describedby="passwordHint" 
+            onkeydown="handleEnter(event)" placeholder="Passwort eingeben und Enter drücken">
+          <p id="passwordHint" class="visually-hidden">Geben Sie das VIP-Passwort ein und drücken Sie Enter, um zur exklusiven Seite zu gelangen.</p>
         </div>
       </div>
 
       <script>
         function handleEnter(event) {
           if (event.key === "Enter") {
-            const correctPassword = "VIP"; // dein Passwort
+            const correctPassword = "VIP";
             const input = event.target.value;
 
             if (input === correctPassword) {
               window.open("secret.html", "_blank");
             } else {
-              alert("Falsches Passwort");
+              alert("Falsches Passwort. Bitte versuchen Sie es erneut.");
             }
           }
         }
       </script>
     </section>
 
-    <!-- BLOCK 2: Text links / Karussell rechts -->
+    <!-- Karussell 2: Economy Attraktionen -->
     <section class="carousel-block reverse">
+      <h2 class="visually-hidden">Economy Attraktionen</h2>
 
-      <!-- Screenreader-Beschreibung -->
-      <span class="visually-hidden">Weitere Fotostrecke</span>
-
-      <!-- Karussell -->
-      <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Karussell-Inhalt -->
+      <div id="carousel2" class="carousel slide" data-bs-ride="carousel"
+        aria-label="Karussell: Economy Attraktionen">
         <div class="carousel-inner">
 
-          <!-- Slide 1 -->
           <div class="carousel-item active">
-            <img src="images/sunburning.png" class="d-block carousel-img" alt="Sun Burning">
+            <img src="images/sunburning.png" class="d-block carousel-img"
+              alt="Personen liegen auf Liegen auf einer Plattform vor einer riesigen, hellen Sonne.">
           </div>
 
-          <!-- Slide 2 -->
           <div class="carousel-item">
-            <img src="images/angeln.png" class="d-block carousel-img" alt="All Angeln">
+            <img src="images/angeln.png" class="d-block carousel-img"
+              alt="Astronaut angelt auf einer grünen Fläche auf dem Mond; im Hintergrund ein großer Planet.">
           </div>
 
-          <!-- Slide 3 -->
           <div class="carousel-item">
-            <img src="images/looking.png" class="d-block carousel-img" alt="Watching Golf">
+            <img src="images/looking.png" class="d-block carousel-img"
+              alt="Luxuriöser Ausstellungsraum mit Menschen in Abendkleidung und Vitrinen; Blick ins All durch Fenster.">
           </div>
 
         </div>
-        <!-- /carousel-inner -->
 
-        <!-- Navigation vorher -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev"
+          aria-label="Vorheriges Bild anzeigen">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
 
-        <!-- Navigation nächstes -->
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next"
+          aria-label="Nächstes Bild anzeigen">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
-
       </div>
-      <!-- /carousel -->
 
-      <!-- Statischer Text links -->
+      <!-- Statischer Text -->
       <div class="carousel-text">
         <h3>Economy</h3>
-        <p>V.I.O.L.A. bietet auch spaßige Attraktionen für die lower-class</p>
-        <li>Solar Vitamin D Retreat</li>
-        <li>Orbital Scrap Hunters</li>
+        <p>V.I.O.L.A. bietet auch spaßige Attraktionen für die Lower-Class</p>
+        <ul>
+          <li>Solar Vitamin D Retreat</li>
+          <li>Orbital Scrap Hunters</li>
+        </ul>
       </div>
-
     </section>
-    <!-- 
-  Inhalt 
-            <h1> Überschrift Inhalt </h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h2>Überschrift A</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-                    </div>
-                    <div class="col">
-                        <h2>Überschrift B</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-                    </div>
-                    <div class="col">
-                        <h2>Überschrift C</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et</p>
-                    </div>
-                </div>
--->
-    <!-- Raketenangebote -->
+
+    <!-- Angebote: VIP, Business, Trash -->
     <section id="viola__offers" class="viola__offers">
-
       <div class="viola__offers__inner">
-
-        <!-- Überschrift -->
         <h1>Angebote</h1>
 
         <!-- VIP Rakete -->
         <div class="viola__offers__slider">
-
-          <div id="vipCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
-
+          <div id="vipCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false"
+            aria-label="Bilder der VIP-Raketenklasse">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/vip.jpg" alt="VIP">
+                <img src="images/vip.jpg"
+                  alt="Luxuriöses Schlafzimmer mit Blick auf die Erde durch große Fenster; gedeckter Tisch im Vordergrund.">
               </div>
               <div class="carousel-item">
-                <img src="images/viploggia.jpg" alt="VIP Loggia">
+                <img src="images/viploggia.jpg"
+                  alt="Luxuriöser Salon mit Whirlpool und Bühne; Kronleuchter und Blick ins All.">
               </div>
               <div class="carousel-item">
-                <img src="images/viproom.jpg" alt="VIP Room">
+                <img src="images/viproom.jpg"
+                  alt="Raumfähre im Orbit über der Erde; Sonnenaufgang am Horizont.">
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#vipCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#vipCarousel" data-bs-slide="prev"
+              aria-label="Vorheriges VIP-Bild">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#vipCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#vipCarousel" data-bs-slide="next"
+              aria-label="Nächstes VIP-Bild">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
-
           </div>
 
           <div class="viola__offers__slider__item__info">
             <h2>VIP</h2>
             <p>Willkommen in der glitzernden Welt der VIP-Raketenklasse, wo Luxus kein Wort, sondern ein Lebensstil ist!
-              Stellen Sie sich ein Raumschiff vor, das mit goldenen Armlehnen, aushängbaren Kaviar-Bar und einem
-              Luxus-Federbett– Mit einem Ticketpreis ab circa einer Million Euro wird das Weltraumreisen zur nobelsten
-              Erfahrung, die man sich leisten kann. Passagiere genießen Cocktails aus Schampus an Board und nur das
-              feinste Essen, während sie ein Flügel mit Live-Music begleitet. </p>
+              Stellen Sie sich ein Raumschiff vor, das mit goldenen Armlehnen, aushängbarer Kaviar-Bar und einem
+              Luxus-Federbett ausgestattet ist. Mit einem Ticketpreis ab circa einer Million Euro wird das Weltraumreisen zur nobelsten
+              Erfahrung, die man sich leisten kann. Passagiere genießen Cocktails aus Champagner an Board und nur das
+              feinste Essen, während sie von Live-Musik begleitet werden. </p>
             <br>
-            <span>Anfrage senden -></span>
+            <span>Anfrage senden:</span>
 
-            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de">
-              <img src="images/mail.png" alt="Mail">
+            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de" aria-label="E-Mail an VIP-Support senden">
+              <img src="images/mail.png" alt="">
             </a>
           </div>
-
         </div>
 
         <!-- Business Rakete -->
         <div class="viola__offers__slider">
-
-          <div id="businessCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
-
+          <div id="businessCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false"
+            aria-label="Bilder der Business-Raketenklasse">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/business.jpg" alt="Business">
+                <img src="images/business.jpg"
+                  alt="Eleganter Salon mit Bühne und Flügel; Tische und Kronleuchter vor Panoramafenstern ins All.">
               </div>
               <div class="carousel-item">
-                <img src="images/businessloggia.jpg" alt="Business Loggia">
+                <img src="images/businessloggia.jpg"
+                  alt="Luxuriöses Schlafzimmer mit großem Bett und Kronleuchter; durch Fenster Blick auf die Erde.">
               </div>
               <div class="carousel-item">
-                <img src="images/businessroom.jpg" alt="Business Room">
+                <img src="images/businessroom.jpg"
+                  alt="Moderner Lounge-Bereich in einem Raumschiff mit Bar, Sitzecke und rundem Whirlpool.">
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#businessCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#businessCarousel" data-bs-slide="prev"
+              aria-label="Vorheriges Business-Bild">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#businessCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#businessCarousel" data-bs-slide="next"
+              aria-label="Nächstes Business-Bild">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
-
           </div>
 
           <div class="viola__offers__slider__item__info">
             <h2>Business</h2>
-            <p>Wir begrüßen Sie herzlich zu unseren hochmodernen Star-Rakete, hier wird der Begriff „Business-Class“
-              ganz neu definiert. Es gibt es ergonomische Sitze mit Massagefunktion, WLAN, das schneller ist als das
-              Licht, und ein Menü von einem unserer ang. Der Ticketpreis? Nur ab einer Summe von 500.000 Euro steigen
-              Sie in ihr Luxus-Abenteuer. Und keine Sorge, auch in der Business-Raketenklasse gibt es genügend Platz für
+            <p>Wir begrüßen Sie herzlich zu unserer hochmodernen Business-Rakete, hier wird der Begriff „Business-Class"
+              ganz neu definiert. Es gibt ergonomische Sitze mit Massagefunktion, WLAN, das schneller ist als das
+              Licht, und ein Menü von unserem renommierten Chef. Der Ticketpreis? Nur ab einer Summe von 500.000 Euro steigen
+              Sie in Ihr Luxus-Abenteuer ein. Und keine Sorge, auch in der Business-Raketenklasse gibt es genügend Platz für
               die neuesten Ideen und Start-ups.</p>
             <br>
-            <span>Anfrage senden -></span>
-            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de">
-              <img src="images/mail.png" alt="Mail">
+            <span>Anfrage senden:</span>
+            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de" aria-label="E-Mail an Business-Support senden">
+              <img src="images/mail.png" alt="">
             </a>
           </div>
-
         </div>
 
         <!-- Trash Rakete -->
         <div class="viola__offers__slider">
-
-          <div id="trashCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false">
-
+          <div id="trashCarousel" class="carousel slide" data-bs-interval="false" data-bs-touch="false"
+            aria-label="Bilder der Economy-Raketenklasse">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/trash.png" alt="Trash">
+                <img src="images/trash.png"
+                  alt="Dunkles, abgenutztes Schlafabteil mit zwei Betten und Bullaugenfenstern ins All.">
               </div>
               <div class="carousel-item">
-                <img src="images/trashloggia.png" alt="Trash Loggia">
+                <img src="images/trashloggia.png"
+                  alt="Abgenutzter Innenraum mit Sitzreihe, Kabeln und Tür; Bullaugen zeigen den Blick ins All.">
               </div>
               <div class="carousel-item">
-                <img src="images/trashroom.png" alt="Trash Room">
+                <img src="images/trashroom.png"
+                  alt="Schäbiger Innenraum mit Sitzreihe, Tisch und Schild „V.I.O.L.A. Check In"; Bullaugen mit Weltraumblick.">
               </div>
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#trashCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#trashCarousel" data-bs-slide="prev"
+              aria-label="Vorheriges Economy-Bild">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
 
-            <button class="carousel-control-next" type="button" data-bs-target="#trashCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#trashCarousel" data-bs-slide="next"
+              aria-label="Nächstes Economy-Bild">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </button>
-
           </div>
 
           <div class="viola__offers__slider__item__info">
-            <h2>Trash</h2>
-            <p>Für die Economy User: Die Trash-Raketenklasse – hier wird der Begriff „Holzklasse“ zum neuen Trend! Mit
-              einem günstigeren Ticketpreis von nur 100.000 Euro darf man sich auf die Erfahrung freuen, in einem
-              gepolsterten Stuhl zu sitzen, der mehr nach Gartenstuhl aussieht. Es gibt ein tolles Fenster – einen
+            <h2>Economy (Trash)</h2>
+            <p>Für die Economy User: Die Trash-Raketenklasse – hier wird der Begriff „Holzklasse" zum neuen Trend! Mit
+              einem günstigen Ticketpreis von nur 100.000 Euro darf man sich auf die Erfahrung freuen, in einem
+              gepolsterten Stuhl zu sitzen, der eher nach Gartenstuhl aussieht. Es gibt ein tolles Fenster – einen
               kleinen Ausblick auf den Raum, der durch eine dünne Plastikscheibe begrenzt wird! Während der Fahrt bietet
-              V.I.O.L.A eine Menü-Box an, enthalten ist ein Softdrink und „Space Chips“ </p>
+              V.I.O.L.A. eine Menü-Box an, enthalten ist ein Softdrink und „Space Chips". </p>
             <br>
-            <span>Anfrage senden -></span>
-            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de">
-              <img src="images/mail.png" alt="Mail">
+            <span>Anfrage senden:</span>
+            <a class="viola__content__slider__item__info__btn" href="mailto:violainfo@mail.de" aria-label="E-Mail an Economy-Support senden">
+              <img src="images/mail.png" alt="">
             </a>
           </div>
-
         </div>
 
       </div>
     </section>
 
-    <section id="viola__interview" class="viola__interview">
-
-      <div class="viola__interview__inner">
-
-        <div class="viola__interview__text">
-
-          <h1 class="viola__interview__headline">
-            <span class="underline">EXKLUSIV MIT POPSTAR KATI BIRNENWEIN</span>
-          </h1>
-          <p class="viola__interview__quote">
-            <em>„Flying with V.I.O.L.A hat mein ganzes Life gechanged.
-              I'm just super grateful and I feel so much love.“</em>
-          </p>
-          <p class="viola__interview__info">
-            Wenn Sie mehr über das exklusive Interview hören möchten,
-            klicken Sie hier: <br>
-            <button type="button" id="playRadio" class="radio-btn">
-              ▶ Radiospot abspielen
-            </button>
-            <audio id="radioAudio">
-              <source src="video/Radiospot%20MI.mp3" type="audio/mpeg">
-            </audio><a href="video/Radiospot MI.mp3"></a>
-          </p>
+   <!-- Interview mit Radiospot -->
+<section id="viola__interview" class="viola__interview">
+  <div class="viola__interview__inner">
+    <div class="viola__interview__text">
+      <h1>Exklusiv mit Popstar Kati Birnenwein</h1>
+      <p class="viola__interview__quote">
+        <em>„Flying with V.I.O.L.A. hat mein ganzes Leben geändert.
+          I'm just super grateful and I feel so much love."</em>
+      </p>
+      
+      <!-- AUDIO + TRANSKRIPT (barrierefrei) -->
+      <div class="viola__interview__audio-section">
+        <h2>Radiospot – Exklusives Interview</h2>
+        
+        <!-- Verstecktes Audio-Element -->
+        <audio id="radioAudio" style="display: none;">
+          <source src="video/Radiospot%20MI.mp3" type="audio/mpeg">
+        </audio>
+        
+        <!-- Beschreibung + Links -->
+        <p class="viola__interview__info">
+          Hören Sie das vollständige Interview mit Kati Birnenwein über ihre Erfahrung mit V.I.O.L.A.
+        </p>
+        
+        <!-- Zwei Optionen für Nutzer -->
+        <div class="viola__interview__options">
+          <a href="radiospot-transkript.html" class="option-link" aria-label="Zum vollständigen Transkript">
+            📄 Transkript lesen
+          </a>
+          <button type="button" id="playRadio" class="radio-btn" aria-label="Radiospot abspielen oder pausieren">
+            ▶ Radiospot abspielen
+          </button>
         </div>
-
-        <!-- BILD RECHTS -->
-        <div class="viola__interview__image">
-          <img src="images/kprofil.png" alt="Kati Birnenwein">
-        </div>
-
       </div>
-    </section>
-    <!-- Ticket + Newsletter (kombiniert) -->
+    </div>
+
+    <!-- BILD RECHTS -->
+    <div class="viola__interview__image">
+      <img src="images/kprofil.png"
+        alt="Person im blauen Raumanzug hält eine goldene Rakete mit der Aufschrift „K Birnenwein".">
+    </div>
+  </div>
+</section>
+
+
+    <!-- Newsletter & Ticket -->
     <section id="viola__ticket" class="viola__ticket">
-
       <div class="viola__ticket__inner">
 
-        <!-- Links: Ticket -->
+        <!-- Ticket Bild -->
         <div class="viola__ticket__visual">
-          <img src="images/goldenticket.png" alt="Golden Ticket">
+          <img src="images/goldenticket.png"
+            alt="Goldenes Ticket mit der Aufschrift „GOLDEN TICKET" und „VIP" sowie einer kleinen Rakete.">
           <p class="viola__ticket__hint">Newsletter abonnieren und automatisch am Gewinnspiel teilnehmen.</p>
         </div>
 
-        <!-- Rechts: Newsletter -->
+        <!-- Newsletter Formular -->
         <div class="viola__ticket__card">
           <h2 class="card-title">Newsletter</h2>
           <h3 class="card-subtitle">Bleiben Sie immer auf dem neuesten Stand!</h3>
 
           <p class="card-text">
-            Melden Sie sich an und sichern Sie sich die Chance auf ein exklusives „Golden Ticket“:
+            Melden Sie sich an und sichern Sie sich die Chance auf ein exklusives „Golden Ticket":
             einmal V.I.O.L.A. erleben wie ein VIP. News, Updates und Aktionen direkt in Ihr Postfach.
           </p>
 
-          <a href="mailto:violainfo@mail.de" target="_blank" class="btn">Anmelden</a>
+          <a href="mailto:violainfo@mail.de?subject=Newsletter%20Anmeldung" class="btn" rel="noopener noreferrer">Anmelden</a>
         </div>
 
       </div>
-
     </section>
   </main>
 
-  <!-- Footer Abschnitt -->
-  <div id="viola__impressum" class="viola__impressum">
-    <footer class="container">
+  <!-- Footer / Impressum -->
+  <footer id="viola__impressum" class="viola__impressum">
+    <div class="container">
       <h2>Autoren/-innen</h2>
       <p>
         Marie Streb, Mathilda Wirth, Arne Osterhaus<br>
@@ -422,8 +429,8 @@
       <p>
         <a href="https://www.uni-bremen.de/impressum.html">Impressum der Universität Bremen</a>
       </p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -441,4 +448,6 @@
     });
   </script>
 
+</body>
 </html>
+
